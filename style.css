@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
+}
+p a {
+  font-weight: 400;
+}
+
+/* Dentro do main o :first-child pega o primeiro elemento P */
+main p:first-child {
+  color: rgba(113, 88, 239, 1);
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  line-height: 3.2rem;
+  margin-bottom: 3.2rem;
+}
+main {
+  max-width: 33rem;
+  margin: 0 auto;
+}
+h1 {
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  color: rgba(9, 0, 57, 1);
+  margin-bottom: 3.1rem;
+}
+
+/* pegar o p que anterior a ele tenha um h1 */
+h1 + p {
+  color: rgba(10, 0, 57, 0.64);
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  margin-bottom: 2.8rem;
+}
+a {
+  color: rgba(9, 0, 57, 1);
+  text-decoration: none;
+}
+a:hover {
+  color: rgba(113, 88, 239, 1);
+}
+ul {
+  margin-top: 7.1rem;
+  list-style: none;
+}
+ul span {
+  font-weight: 800;
+  color: rgba(9, 0, 57, 1);
+  font-size: 7.2rem;
+  line-height: 8rem;
+  letter-spacing: -2px;
+}
+ul li {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: #090039;
+  width: 25.7rem;
+  display: flex;
+  gap: 3.8rem;
+}
+:root {
+  font-size: 62.5%; /* 16px /10px*/
+}
+body {
+  font-size: 1.6rem;
+  background: #ece9fd;
+  padding: 5rem 2.3rem 6.6rem;
+}
+@media (min-width: 700px) {
+  main {
+    display: flex;
+    gap: 5rem;
+    max-width: 800px;
+  }
+
+  main h1 a {
+    max-width: 484px;
+  }
+  ul li + li {
+    margin-top: 3.2rem;
+  }
+}
